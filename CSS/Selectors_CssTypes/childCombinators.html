@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child Combinator</title>
+  </head>
+  <style>
+    section > h1 {
+      color: blue;
+    }
+    div + h1 {
+      color: red;
+    }
+    div ~ p {
+      color: orange;
+    }
+  </style>
+  <body>
+    <!-- <h1>ccc</h1> -->
+    <h1>d</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur</p>
+    <div></div>
+    <h1>redd</h1>
+
+    <p>sdfgh</p>
+    <div>
+      <h1>james</h1>
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <section>
+        <!-- not Child but Descendant -->
+        <p>Paragraph 3 in the div (inside a section element).</p>
+        <h1>James</h1>
+      </section>
+      <p>Paragraph 4 in the div.</p>
+    </div>
+    <h1>rcb</h1>
+    <p>Hi</p>
+    <p>Hello</p>
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 6. Not in a div.</p>
+  </body>
+</html>
